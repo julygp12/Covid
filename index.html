@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMIDAS RAPIDAS</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./bootstrap-4.6/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container m-3">
+        <div class="row justify-content-center">
+          <div class="col-sm-8 col-xl-8">
+            <div class="card">
+              <div class="card-header">
+                <div class="list-group list-group-horizontal" id="list-tab" role="tablist">
+                 <img src="./imagen/logo.jpg" alt="" height="200" width="700">
+                  
+                </div>
+      
+      
+        </div>
+        
+             
+      
+      
+     </div>
+    <div class="container">
+        <div class="card">
+          <div class="card-header text-info d-flex justify-content-between align-items-center bg-warning">
+            
+           BICTIA FAST FOOD FORM CONTROL COVID
+           <a href="./pago.html" class="btn btn-danger"onclick="validacion()" >Enviar Pedido</a>
+          </div>
+              <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="temperatura">Temperatura</label>    
+                        <input type="number" class="form-control" id="temperatura" name="email" aria-describedby="emailHelp" required>
+                               
+                       
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" required>
+                        
+                      </div>                  
+                     
+                    
+                    <div class="form-group">
+                        <label for="Username">Cédula</label>
+                        <input type="number" class="form-control" id="cedula" placeholder="Ingrese su numero de cedula" required>
+                     </div>  
+
+                                        
+                                                                                             
+                     
+                      <div class="form-group">
+                        <label for="comida">Menú</label>
+                        <select class="form-control" id="comida">
+                            
+                            <option>Elije alguna</option>
+                          <option value="hamburguesa">Hamburguesa</option>
+                          <option value ="pizza">Pizza</option> 
+                          <option value ="perro caliente">Perro Caliente</option>                      
+                          <option value ="sc">Salchipapa</option> 
+                          <option value ="ar">Arepa Rellena</option> 
+                          <option value ="pinchos">Pinchos</option>                          
+                       </div>
+                                           
+                                      
+                    
+                                                             
+                       
+                </form>
+                
+                
+
+                
+        </div>        
+         
+
+
+        <script>
+            function validacion(){
+            let nombre = document.getElementById('nombre').value 
+            let cedula = document.getElementById('cedula').value
+            let comida = document.getElementById('comida').value    
+            let temperatura = document.getElementById('temperatura').value
+           
+            
+                       
+                    
+    
+            if(temperatura>37){
+                alert('Tu temperatura es muy alta, NO puedes ingresar')
+                
+            }else{
+                alert('puedes ingresar')
+
+            
+            if (comida=="hamburguesa") {
+                alert('su valor es de $8000')
+             
+            }
+
+            if (comida=="pizza") {
+                alert('su valor es de $7500')
+            
+                
+            }
+
+            if (comida=="perro caliente") {
+                alert('su valor es de $9000')
+            
+                
+                
+            }
+
+            if (comida=="sc") {
+                alert('su valor es de $8500')
+            }
+
+            if (comida=="ar") {
+                alert('su valor es de $5500')
+            }
+           
+
+            if (comida=="pinchos") {
+                alert('su valor es de $4500')
+            }              
+                           
+                    
+            }
+            }                            
+            
+        </script>
+               
+
+    <script src="./js/jquery-3.6.min.js"></script>
+    <script src="./bootstrap-4.6/js/bootstrap.bundle.min.js"></script> 
+
+
+</body>
+</html>

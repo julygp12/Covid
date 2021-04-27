@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METODO DE PAGO</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./bootstrap-4.6/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+          <div class="card-header text-info d-flex justify-content-between align-items-center bg-warning">
+            <a href="./index.html" class="btn btn-primary">Regresar</a> 
+           BICTIA FAST FOOD FORM
+           <a href="./pago.html" class="btn btn-danger" onclick="validacion()" >Pagar</a>
+          </div>
+              <div class="card-body">                 
+                         
+    <div class="form-group">
+        <label for="metodo">Metodo de pago</label>
+        <select class="form-control" id="pago">
+            
+            <option>Metodo de pago</option>
+          <option value="efe">Efectivo</option>
+          <option value ="cc">Credit Card</option>
+                                            
+       </div> 
+          
+
+         
+       <script>
+        function validacion(){
+        let pago = document.getElementById('pago').value   
+                              
+        
+        if (pago=="cc") {
+            alert('No tiene descuento')        
+        }
+
+        else{
+            alert('Tiene 5% descuento')
+        
+            
+        }                  
+                       
+                
+        }
+                                    
+        
+    </script>
+               
+    <script src="./js/jquery-3.6.min.js"></script>
+    <script src="./bootstrap-4.6/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

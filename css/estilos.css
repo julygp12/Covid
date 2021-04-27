@@ -1,0 +1,22 @@
+.container{
+    padding: 0%;
+    margin-top: 5%;
+}
+
+.btn-primary{
+    margin-top: 1%;
+    box-shadow:         6px 4px 5px 0px rgba(50, 50, 50, 0.75);    
+}
+
+.card {
+    box-shadow:         9px 7px 5px 0px rgba(50, 50, 50, 0.75);
+
+}
+
+.form-control{
+    box-shadow:         3px 4px 6px 0px rgba(50, 50, 50, 0.75);
+
+}
+
+
+
